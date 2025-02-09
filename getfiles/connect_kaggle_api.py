@@ -34,7 +34,3 @@ class kaggle_auth:
 
 
 
-# zf = zipfile.ZipFile('PROJECT/data/titanic.zip') 
-# submission = pd.read_csv(zf.open('gender_submission.csv'))
-# test = pd.read_csv(zf.open('test.csv'))
-# train = pd.read_csv(zf.open('train.csv'))

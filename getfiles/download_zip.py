@@ -40,6 +40,6 @@ def extract_all_zips_in_directory(directory):
     for filename in os.listdir(directory):
         if filename.endswith(".zip"):
             zip_path = os.path.join(directory, filename)
-            extract_path = os.path.join(directory, filename[:-4]) # Extract to a directory with the same name as the zip file (without .zip)
-            os.makedirs(extract_path, exist_ok=True)
-            extract_and_delete_zip(zip_path, extract_path)
+            # extract_path = os.path.join(directory, filename[:-4]) # Extract to a directory with the same name as the zip file (without .zip)
+            os.makedirs(directory, exist_ok=True)
+            extract_and_delete_zip(zip_path, directory)
