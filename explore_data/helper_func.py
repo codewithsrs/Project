@@ -11,10 +11,10 @@ def replace_Nan_values(df,col):
 
     if df[col].dtypes != 'O':
 
-        upper = np.percentile(0.75,df[col])
-        lower = np.percentile(0.35,df[col])
+        upper = np.percentile(df[col],75)
+        lower = np.percentile(df[col],25)
 
-        df[col] = np.where(df[col].isna(),np.random.randint(lower,upper),\
+        df[col] = np.where(df[col].isna(),(lower+upper)/1.5,\
                                 df[col])
     else:
 
