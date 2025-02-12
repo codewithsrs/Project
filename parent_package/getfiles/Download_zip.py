@@ -1,12 +1,8 @@
-from connect_kaggle_api import  kaggle_auth
 import os
 import zipfile
 
 
-kg2 = kaggle_auth()
 
-def download_data(path,name):
-    kg2.download(path,name)
 
 def extract_and_delete_zip(zip_filepath, extract_to_dir):
     """Extracts files from a zip archive and then deletes the zip file.
