@@ -10,7 +10,7 @@ def replace_nan_values(df, col):
     elif pd.api.types.is_object_dtype(df[col]):
         unique_vals = df[col].dropna().unique()
         if len(unique_vals) > 0: # Handle all-NaN column case
-            df.fillna({col:lambda x: np.random.choice(unique_vals) if pd.isnull(x) else x}, inplace=True)
+            df[col] = np.where(df[col].isna(),np.random.choice(unique_vals),df[col])
         else:
             print(f"Warning: Column '{col}' contains only null values.  No replacement possible.")
     else:
