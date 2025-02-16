@@ -30,7 +30,7 @@ except Exception as e:
     exit(1) # Exit if preprocessing fails
 
 try:
-    xg = XGBRegressor(random_state=3, n_estimators=500, max_depth=6, growpolicy='lossguide')
+    xg = XGBRegressor(random_state=3)
     logging.info("XGBoost Regressor initialized.")
 
     xg = xg.fit(x_train, y_train)
