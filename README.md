@@ -34,7 +34,10 @@ kauth.authenticate_key() # Authenticate
 kauth.download("data/my_competition", "my-competition-name")
 
 # Submit predictions (example)
-kauth.submit_predictions("submission.csv", "My submission", "my-competition-name")```
+kauth.submit_predictions("submission.csv", "My submission", "my-competition-name")
+```
+
+
 
 
 # Zip File Extraction and Deletion Script Summary
@@ -84,7 +87,7 @@ This function processes *all* zip files within a given directory.
 ## Usage Example
 
 ```python
-from zip_extraction import extract_all_zips_in_directory, extract_and_delete_zip```
+from zip_extraction import extract_all_zips_in_directory, extract_and_delete_zip
 
 # Extract all zip files in a directory
 extract_all_zips_in_directory("/path/to/my/directory")
