@@ -9,7 +9,7 @@ class kaggle_auth:
     def __init__(self):
         logging.info("kaggle_auth object initialized.")
 
-    @staticmethod  # Make it a static method since it doesn't use self
+    @staticmethod  
     def authenticate_key():
         try:
             api.authenticate()
