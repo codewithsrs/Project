@@ -35,7 +35,7 @@ kauth.download("data/my_competition", "my-competition-name")
 
 # Submit predictions (example)
 kauth.submit_predictions("submission.csv", "My submission", "my-competition-name")
-```
+python```
 
 
 
@@ -93,7 +93,8 @@ from zip_extraction import extract_all_zips_in_directory, extract_and_delete_zip
 extract_all_zips_in_directory("/path/to/my/directory")
 
 # Extract a single zip file
-extract_and_delete_zip("/path/to/my/archive.zip", "/path/to/extraction/directory")```
+extract_and_delete_zip("/path/to/my/archive.zip", "/path/to/extraction/directory")
+python```
 
 
 # Main Script for Kaggle Data Download and ZIP Extraction - Summary
