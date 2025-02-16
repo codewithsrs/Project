@@ -24,7 +24,7 @@ This Python code defines a class `kaggle_auth` designed to simplify interactions
 
 ## Usage Example (Illustrative)
 
-```python
+```
 from kaggle_auth import kaggle_auth
 
 kauth = kaggle_auth()  # Create an instance
@@ -35,8 +35,8 @@ kauth.download("data/my_competition", "my-competition-name")
 
 # Submit predictions (example)
 kauth.submit_predictions("submission.csv", "My submission", "my-competition-name")
-python```
 
+```
 
 
 
@@ -86,7 +86,7 @@ This function processes *all* zip files within a given directory.
 
 ## Usage Example
 
-```python
+```
 from zip_extraction import extract_all_zips_in_directory, extract_and_delete_zip
 
 # Extract all zip files in a directory
@@ -94,7 +94,8 @@ extract_all_zips_in_directory("/path/to/my/directory")
 
 # Extract a single zip file
 extract_and_delete_zip("/path/to/my/archive.zip", "/path/to/extraction/directory")
-python```
+
+```
 
 
 # Main Script for Kaggle Data Download and ZIP Extraction - Summary
