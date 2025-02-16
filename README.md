@@ -24,7 +24,7 @@ This Python code defines a class `kaggle_auth` designed to simplify interactions
 
 ## Usage Example (Illustrative)
 
-```
+```python
 from kaggle_auth import kaggle_auth
 
 kauth = kaggle_auth()  # Create an instance
@@ -86,7 +86,7 @@ This function processes *all* zip files within a given directory.
 
 ## Usage Example
 
-```
+```python
 from zip_extraction import extract_all_zips_in_directory, extract_and_delete_zip
 
 # Extract all zip files in a directory
@@ -162,7 +162,7 @@ The script logs its progress and any errors to the `main_script.log` file.
 
 `try...except` blocks are used to catch and log potential errors during the download and extraction processes.
 
-## File Structure (Illustrative)
+
 
 
 
@@ -233,7 +233,7 @@ The script uses the `logging` module to log events and errors to a file named `m
 
 The script includes `try...except` blocks for file loading, data combination, and within the `train_trans()` function.  Specific exceptions are caught and logged, and the script may exit in some error cases.
 
-## File Structure (Illustrative)
+
 
 
 # Test Data Processing Script Summary
@@ -427,5 +427,3 @@ The script logs events and errors to both the `model_training.log` file and the 
 ## Error Handling
 
 The script includes `try...except` blocks to handle potential errors during preprocessing, model training, prediction, saving, and Kaggle submission.  The script will exit if preprocessing or model training fails.
-
-## File Structure (Illustrative)
